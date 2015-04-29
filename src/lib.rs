@@ -34,9 +34,11 @@ fn main() {
     //
     // ...but alas I will wait
     somehow_this_is_stdout_and_it_has_to_mutable_eh.fg(term::color::GREEN).unwrap();
+    somehow_this_is_stdout_and_it_has_to_mutable_eh.bg(term::color::BLUE).unwrap();
     (write!(somehow_this_is_stdout_and_it_has_to_mutable_eh, "hello, ")).unwrap();
 
     somehow_this_is_stdout_and_it_has_to_mutable_eh.fg(term::color::RED).unwrap();
+    somehow_this_is_stdout_and_it_has_to_mutable_eh.bg(term::color::YELLOW).unwrap();
     (write!(somehow_this_is_stdout_and_it_has_to_mutable_eh, "world!")).unwrap();
 
     somehow_this_is_stdout_and_it_has_to_mutable_eh.reset().unwrap();
