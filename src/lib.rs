@@ -4,7 +4,7 @@
 extern crate term;
 use std::io::prelude::*;
 
-pub mod fancy_printer_exclamation_point {
+pub mod fancy_printer_toolbox {
     extern crate term;
     use std::io::prelude::*;
 
@@ -18,10 +18,10 @@ pub mod fancy_printer_exclamation_point {
 }
 
 fn main() {
-    use fancy_printer_exclamation_point;
+    use fancy_printer_toolbox;
     print_title();
 
-    fancy_printer_exclamation_point::fancy_print("A Fancy Sentence; hence the the semi-colon.");
+    fancy_printer_toolbox::fancy_print("A Fancy Sentence; hence the the semi-colon.");
     seperator();
 }
 
