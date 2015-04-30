@@ -15,6 +15,6 @@ fn main() {
 }
 
 #[test]
-fn it_works() {
-    assert!(true); // is this what I'm supposed to do!?!?
+fn test_math_in_your_face_returns_255() {
+    assert_eq!(ti_83::math_in_your_face(), 255);
 }
