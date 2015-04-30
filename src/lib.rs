@@ -2,6 +2,8 @@
 
 extern crate term;
 
+mod print_stuff;
+
 pub mod fancy_printer_toolbox {
     extern crate term;
     use std::io::prelude::*;
@@ -23,19 +25,7 @@ pub mod fancy_printer_toolbox {
     }
 }
 
-mod print_stuff {
-    pub fn print_title() {
-        println!("\n\nMessing with Modules");
-        println!("====================\n\n");
-    }
-
-    pub fn seperator() {
-        println!("\n");
-    }
-}
-
 fn main() {
-    use print_stuff;
     use fancy_printer_toolbox;
     print_stuff::print_title();
 
