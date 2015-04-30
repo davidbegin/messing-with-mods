@@ -4,6 +4,7 @@ extern crate term;
 
 mod print_stuff;
 mod fancy_printer_toolbox;
+mod ti_83;
 
 fn main() {
     print_stuff::print_title();
